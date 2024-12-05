@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Orbitron, Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f3f3f3;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 10px; /* Reduce bottom margin to move closer to the grid */
+    width: 100%;
+}
+  
+.calculator {
+    background: #fff;
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+  
+#display {
+    font-size: 2em;
+    text-align: right;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #f9f9f9;
+}
+
+#secondary-display {
+    font-size: 1em;
+    text-align: right;
+    color: gray;
+    margin-bottom: 5px;
+    height: 20px;
+  }
+  
+  
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+  
+button {
+    font-size: 1.5em;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #e0e0e0;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+  
+button:hover {
+    background: #ccc;
+}
+  
+button.operator {
+    background: #ffa500;
+    color: white;
+}
+  
+button#equals {
+    background: #0078d7;
+    color: white;
+    grid-column: span 2;
+}
+  
+#delete {
+    background: red;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+  
+#delete:hover {
+    background: darkred;
+}
+  
+#clear {
+    background: orange;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+    grid-column: span 2;
+}
+  
+#clear:hover {
+    background: darkorange;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.4);
+    font-size: 0.9rem;
+    color: #bbb;
+}
+
+footer span {
+    color: #fff;
+}
+  

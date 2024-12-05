@@ -1,11 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+  <header id="title">Calculator</header>
+  <div class="calculator">
+    <div id="secondary-display"></div>
+    <div id="display">0</div>
+    <div class="buttons">
+      <button class="digit">7</button>
+      <button class="digit">8</button>
+      <button class="digit">9</button>
+      <button class="operator">÷</button>
+      <button class="digit">4</button>
+      <button class="digit">5</button>
+      <button class="digit">6</button>
+      <button class="operator">×</button>
+      <button class="digit">1</button>
+      <button class="digit">2</button>
+      <button class="digit">3</button>
+      <button class="operator">-</button>
+      <button class="digit">0</button>
+      <button class="decimal">.</button>
+      <button id="delete">⌫</button>
+      <button class="operator">+</button>
+      <button id="clear">Clear</button>
+      <button id="equals">=</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <footer>
+    <p>
+        Copyright © 
+        <script>document.write(new Date().getFullYear())</script>
+        JoelCornfield
+    </p>
+  </footer>
 </body>
 </html>
